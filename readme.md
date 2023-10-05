@@ -5,7 +5,7 @@
 
 ## 📃 **About**
 
-&nbsp;&nbsp;&nbsp;&nbsp;The project presented for this discipline will be based on a web application developed in **JavaScript** , **HTML** and **CSS**, and using **socket-io** for the server-client connection. The project will be a retro game in a Shoot’em up and **Fixed Shooter style**, with the controlled ship’s movement only possible in the Y axis, similar to the games of the same style on the SNES console.
+&nbsp;&nbsp;&nbsp;&nbsp;This project will be based on a web application developed in **JavaScript** , **HTML** and **CSS**, and using **socket-io** for the server-client connection. The project will be a retro game in a Shoot’em up and **Fixed Shooter style**, with the controlled ship’s movement only possible in the Y axis, similar to the games of the same style on the SNES console.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Space is a game with a retro design, and its objective is to compete with friends to see who can go further and get a better score. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Basically, the game will take place in two different browsers, being possible to play with two players, simultaneously, capturing the individual score of each one and displaying the winner with the most points at the end of the game.
