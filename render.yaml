@@ -2,20 +2,19 @@ services:
   - type: web
     name: compspace
     env: node
-    plan: free  # Você pode escolher outros planos pagos
+    plan: free  # Escolha outro plano se necessário
     buildCommand: "npm install"
-    startCommand: "node server.js"  # Altere para o arquivo principal do seu servidor (ex: app.js ou server.js)
+    startCommand: "node server.js"  # Verifique se o arquivo está correto (app.js, index.js, etc.)
     envVars:
       - key: NODE_ENV
         value: production
     disk:
-      - mountPath: /data  # Se precisar de armazenamento persistente
-        sizeGB: 1
-    autoDeploy: true  # Para implantar automaticamente a partir de cada push no Git
-    healthCheckPath: "/"  # Verifica a saúde do serviço, altere conforme necessário
+      - mountPath: /data
+        sizeGB: 1  # Altere o tamanho se precisar de mais armazenamento
+    autoDeploy: true
+    healthCheckPath: "/"  # Alterar se necessário, ou remover se a rota raiz não existir
     regions:
-      - oregon  # Ou outra região disponível mais próxima
+      - oregon
     branches:
       only:
-        - main  # Ou a branch que você deseja monitorar para deploys automáticos
-
+        - main  # Verifique se a branch principal está correta
