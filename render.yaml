@@ -4,17 +4,9 @@ services:
     env: node
     plan: free  # Escolha outro plano se necessário
     buildCommand: "npm install"
-    startCommand: "node server.js"  # Verifique se o arquivo está correto (app.js, index.js, etc.)
+    startCommand: "node server.js"  # Verifique se o arquivo está correto
     envVars:
       - key: NODE_ENV
         value: production
-    disk:
-      - mountPath: /data
-        sizeGB: 1  # Altere o tamanho se precisar de mais armazenamento
     autoDeploy: true
-    healthCheckPath: "/"  # Alterar se necessário, ou remover se a rota raiz não existir
-    regions:
-      - oregon
-    branches:
-      only:
-        - main  # Verifique se a branch principal está correta
+    healthCheckPath: "/"  # Verifique se a rota raiz existe
