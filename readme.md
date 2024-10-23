@@ -71,7 +71,7 @@ The url will look like http://localhost:8080
 
 ## **It is also possible to test the project on Render** 🚀
 
--  **<h3>https://compspace.onrender.com/StartGame/</h3>**
+- **<h3>https://compspace.onrender.com/StartGame/</h3>**
 
 <br>
 
